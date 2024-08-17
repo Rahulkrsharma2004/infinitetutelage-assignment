@@ -1,0 +1,85 @@
+.sidebar {
+  background-color: #8e71d4;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: Fixed (241px) px;
+  /* height: 100vh; */
+  /* height: Fixed (1, 024px) px; */
+  /* padding: 32px 50px 32px 0px; */
+  gap: 90px;
+  border: 0px 1px 0px 0px;
+}
+
+.sidebar-title {
+  width: 18px;
+  height: 18px;
+  padding: 2.93px 2.92px 2.92px 2.93px;
+  /* gap: 100px; */
+  opacity: 0px;
+}
+
+.sidebar-list {
+  list-style-type: none;
+  padding: 0;
+  /* display: flex; */
+}
+
+.sidebar-item {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  padding: 12px 35px 10px 24px;
+  display: flex;
+  align-items: center;
+
+}
+
+.sidebar-icon {
+  margin-right: 9px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-footer {
+  width: Fill (241px) px;
+  height: Hug (280px) px;
+  gap: 8px;
+  opacity: 0px;
+}
+
+
+
+
+.footerProfile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .footerProfileIcon {
+    margin-right: 10px; 
+    font-size: 14px; 
+    background-color: #ae96e65a;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  .footerProfileName h4 {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .footerProfileName p {
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .footerProfileName {
+    display: flex;
+    flex-direction: column;
+  }
+  
