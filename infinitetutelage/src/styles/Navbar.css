@@ -30,6 +30,15 @@
   background-color: #F9FAFB;
   font-size: 16px;
 }
+.navbar-search input::placeholder{
+  font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 16.94px;
+text-align: left;
+color: #98A2B3;
+
+}
 
 .navbar-icon {
   margin-left: 30px;
