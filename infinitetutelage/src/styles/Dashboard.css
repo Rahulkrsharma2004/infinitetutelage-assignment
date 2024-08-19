@@ -1,0 +1,169 @@
+.dashboard-container {
+  /* flex: 1; */
+  /* background-color: #ffffff; */
+  /* background-color: #ec9d9d; */
+  padding: 24px;
+  width: 1;
+  /* height: 200px; */
+}
+
+.card {
+  width: 96%;
+  /* top: 99px; */
+  /* left: 265px; */
+  padding: 14px;
+  gap: 24px;
+  border-radius: 12px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px;
+  border: 2px solid #f2f4f7;
+  margin-bottom: 20px;
+  /* background-color: #1d2939; */
+}
+
+.card h2 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  margin-bottom: 20px;
+  color: #344054;
+}
+
+.grid-container {
+  /* width: Fill (761px) px; */
+  /* height: Hug (154px) px; */
+  /* gap: 8px; */
+  /* opacity: 0px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  /* background-color: #4a90e2; */
+}
+.grid-item {
+  width: 85px;
+  height: 70px;
+  padding: 4px ;
+  border-radius: 8px;
+  border: 1px 0px 0px 0px;
+  /* opacity: 0px; */
+  background: #fcfcfd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* background-color: #ad8edd; */
+}
+.grid-item p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  text-align: center;
+  color: #344054;
+  margin: 0;
+}
+.grid-item span {
+  display: flex;
+  justify-content: center;
+  font-family: Inter;
+  font-size: 20px;
+  /* font-weight: 100; */
+  line-height: 16.94px;
+  text-align: center;
+  color: #667085;
+
+}
+
+.unique-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.unique-card {
+    border: 2px solid #f2f4f7;
+    /* background-color: #963d3d; */
+    /* height: 400px; */
+    padding: 14px 16px 10px 14px;
+    border-radius: 10px;
+    /* background-color: aquamarine; */
+}
+
+.unique-grid-item {
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #f7f9fc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.unique-grid-item:hover {
+    background-color: #e1e7f0;
+}
+
+.unique-grid-item span {
+    font-size: 24px;
+    color: #4a90e2;
+}
+
+.unique-grid-item p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.unique-overview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.unique-overview-header h2 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  text-align: left;
+
+  color: #344054;
+}
+
+.unique-download-report {
+  color: #ad8edd;
+  display: flex;
+  justify-content: center;
+}
+.unique-download-report span {
+  font-size: 23px;
+  display: flex;
+  margin-right: 8px;
+  /* align-items: center; */
+}
+
+.unique-overview-buttons {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  /* margin-bottom: 20px; */
+}
+
+.unique-yearly-button {
+  background: #f1ebf9;
+  color: #1d2939;
+  padding: 10px 15px;
+  border-radius: 12px;
+}
+.unique-monthly-button {
+  color: #98a2b3;
+  padding: 10px 0;
+}
+
+.unique-chart-placeholder {
+  height: 250px;
+  /* background-color: gray; */
+}
+
+

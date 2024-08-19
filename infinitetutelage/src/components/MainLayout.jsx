@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
-// import Dashboard from './Dashboard';
-// import RightSidebar from './RightSidebar';
+import Dashboard from './Dashboard';
+import RightSidebar from './RightSidebar';
 import '../styles/MainLayout.css'; 
 
 const MainLayout = () => {
@@ -10,10 +10,10 @@ const MainLayout = () => {
       <Sidebar  />
       <div className="main-content">
         <Navbar />
-        {/* <div className="content">
+        <div className="content">
           <Dashboard  />
           <RightSidebar />
-        </div> */}
+        </div>
       </div>
     </div>
   );
