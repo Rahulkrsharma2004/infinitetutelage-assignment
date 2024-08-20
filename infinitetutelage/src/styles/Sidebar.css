@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   /* width: 241px; */
-  gap: 90px;
+  gap: 140px;
   border: 0px 1px 0px 0px;
 }
 .ditchVector{
@@ -29,12 +29,12 @@
 
 .sidebar-item {
   font-family: Inter;
-  font-size: 15px;
   font-weight: 500;
   line-height: 19.36px;
   text-align: left;
   padding: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  margin-left: 10px;
   display: flex;
   align-items: center;
 
@@ -47,8 +47,6 @@
 }
 
 .sidebar-footer {
-  width: Fill (241px) px;
-  height: Hug (280px) px;
   gap: 8px;
   opacity: 0px;
 }
@@ -56,21 +54,21 @@
 .footerProfile {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     border-radius: 8px;
   }
 
   .footerProfileIcon {
     margin-right: 10px; 
-    font-size: 14px; 
+    font-size: 16px; 
     background-color: #ae96e65a;
-    padding: 5px;
+    padding: 10px;
     border-radius: 50%;
   }
   
   .footerProfileName h4 {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .footerProfileName p {
