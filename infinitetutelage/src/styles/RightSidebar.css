@@ -219,7 +219,7 @@
     padding: 6px 20px 22px 20px;
     border-radius: 12px;
     border: 2px solid #f2f4f7;
-    background-color: #b7e7ce;
+    /* background-color: #b7e7ce; */
   }
   .trade-card{
     padding: 16px;
