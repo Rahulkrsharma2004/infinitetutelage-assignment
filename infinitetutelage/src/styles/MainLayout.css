@@ -1,15 +1,28 @@
   .container {
     display: flex;
-  }
-  
-  .main-content {
-    width: 100%;
+    /* background-color: aqua; */
+    /* width: 70%; */
   }
   
   .content {
     display: flex;
+    /* background-color: blue; */
+    margin:25px 0;
+    width: 100%;
+    justify-content: space-evenly;
   }
 
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+}
 
 
   

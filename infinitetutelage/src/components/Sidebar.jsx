@@ -12,8 +12,13 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { RiHeadphoneLine } from "react-icons/ri";
 import { RiLogoutBoxLine } from "react-icons/ri";
 import { RiUser3Line } from "react-icons/ri";
+import { useContext } from "react";
+import { Context } from "../context/ContextProvider";
 
 const Sidebar = () => {
+
+  const {sidebarOpen} = useContext(Context)
+
   return (
     <div className="sidebar">
       <ul className="sidebar-list">

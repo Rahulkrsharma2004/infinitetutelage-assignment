@@ -2,6 +2,8 @@
   font-family: Inter;
 }
 body{
+  max-width: 1280;
+  margin: auto;
   padding: 0;
-  margin: 0;
+  /* margin: 0; */
 }

@@ -16,9 +16,21 @@ import { useEffect } from "react";
 import { Chart, registerables } from "chart.js";
 Chart.register(...registerables);
 
+function BarThinkness() {
+    if (window.innerWidth < 480) {
+      return 10;
+    } else {
+      return 25;
+    }
+  }
+
 const Dashboard = () => {
+
+
+  
   useEffect(() => {
     const ctx = document.getElementById("uniqueChart").getContext("2d");
+
     new Chart(ctx, {
       type: "bar",
       data: {
@@ -44,12 +56,12 @@ const Dashboard = () => {
             ],
             backgroundColor: "rgba(128, 90, 213, 0.7)",
             borderRadius: 5,
-            barThickness: 25, 
+            barThickness: BarThinkness(),
           },
         ],
       },
       options: {
-        responsive:true,
+        responsive: true,
         plugins: {
           legend: {
             display: false,
@@ -57,35 +69,34 @@ const Dashboard = () => {
         },
         scales: {
           x: {
-
             grid: {
-              display: false, 
+              display: false,
             },
-            ticks:{
-              color:"#98A2B3",
-              font:{
-                weight:"400",
-                size:"12px",
-                family:"Inter"
-             },
+            ticks: {
+              color: "#98A2B3",
+              font: {
+                weight: "400",
+                size: "12px",
+                family: "Inter",
+              },
             },
             barPercentage: 0.5,
-            categoryPercentage: 0.5, 
+            categoryPercentage: 0.5,
           },
           y: {
             beginAtZero: true,
             max: 1500,
             ticks: {
-              color:"#98A2B3",
-              font:{
-                 weight:"400",
-                 size:"12px",
-                 family:"Inter"
+              color: "#98A2B3",
+              font: {
+                weight: "400",
+                size: "12px",
+                family: "Inter",
               },
-              stepSize: 250, 
-              callback: function(value) {
-                return value === 0 ? '0' : `$${value}`;  // Conditionally format tick labels
-              }
+              stepSize: 250,
+              callback: function (value) {
+                return value === 0 ? "0" : `$${value}`; // Conditionally format tick labels
+              },
             },
             grid: {
               display: false,
