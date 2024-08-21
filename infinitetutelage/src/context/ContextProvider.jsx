@@ -7,6 +7,8 @@ const ContextProvider = ({children}) => {
 
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
+    
+
   return (
     <Context.Provider value={{sidebarOpen,setSidebarOpen}}>
         {children}

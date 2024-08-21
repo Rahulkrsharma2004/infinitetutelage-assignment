@@ -1,13 +1,19 @@
 .sidebar {
-  background-color: #9B76D6;
+  background-color: #9b76d6;
   color: white;
   display: flex;
   flex-direction: column;
   /* width: 241px; */
   gap: 140px;
   border: 0px 1px 0px 0px;
+  transition: transform 0.3s ease; 
+  /* transform: translateX(-100%);  */
 }
-.ditchVector{
+.sidebaropen{
+  transition: transform 0.3s ease; 
+  display: none;
+}
+.ditchVector {
   display: flex;
   justify-content: center;
   /* padding-top: 12px;
@@ -37,7 +43,6 @@
   margin-left: 10px;
   display: flex;
   align-items: center;
-
 }
 
 .sidebar-icon {
@@ -52,33 +57,52 @@
 }
 
 .footerProfile {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    border-radius: 8px;
-  }
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+}
 
-  .footerProfileIcon {
-    margin-right: 10px; 
-    font-size: 16px; 
-    background-color: #ae96e65a;
-    padding: 10px;
-    border-radius: 50%;
+.footerProfileIcon {
+  margin-right: 10px;
+  font-size: 16px;
+  background-color: #ae96e65a;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.footerProfileName h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.footerProfileName p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.footerProfileName {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    display: none;
+    left: -250;
+    transition: transform 0.3s ease; 
   }
-  
-  .footerProfileName h4 {
-    margin: 0;
-    font-size: 16px;
-  }
-  
-  .footerProfileName p {
-    margin: 0;
-    font-size: 12px;
-  }
-  
-  .footerProfileName {
+  .sidebaropen {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    background-color: #9b76d6;
+    color: white;
     display: flex;
     flex-direction: column;
+    gap: 140px;
+    border: 0px 1px 0px 0px;
+    transition: transform 0.3s ease; 
+    
   }
-  
-  
+}

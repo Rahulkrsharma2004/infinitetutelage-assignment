@@ -149,11 +149,7 @@
   /* background-color: gray; */
 }
 
-@media (max-width: 1000px) {
-  .sidebar {
-    display: none;
-  }
-}
+
 
 @media (max-width:900px) {
   .dashboard-container {

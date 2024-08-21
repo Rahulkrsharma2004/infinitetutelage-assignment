@@ -20,7 +20,7 @@ const Sidebar = () => {
   const {sidebarOpen} = useContext(Context)
 
   return (
-    <div className="sidebar">
+    <div className={`sidebar${sidebarOpen ? "open" : ""}`}>
       <ul className="sidebar-list">
         <div className="ditchVector">
           <svg

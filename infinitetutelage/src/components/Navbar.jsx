@@ -1,23 +1,36 @@
 import "../styles/Navbar.css";
-import { RiNotification4Line, RiSearch2Line, RiMenuLine } from "react-icons/ri";
+import {
+  RiNotification4Line,
+  RiSearch2Line,
+  RiMenuLine,
+  RiCloseLine,
+} from "react-icons/ri";
 import { useContext } from "react";
 import { Context } from "../context/ContextProvider";
 
 const Navbar = () => {
-  const {sidebarOpen,setSidebarOpen} = useContext(Context)
+  const { sidebarOpen, setSidebarOpen } = useContext(Context);
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
-    console.log("first")
-    document.querySelector(".dashboard-container").classList.toggle("sidebar-open");
+    console.log("first");
   };
+  
+  // if (window.innerWidth > 1000) {
+  //   setSidebarOpen(true);
+  // }
 
   return (
     <nav>
       <div className="navbar">
         <div className="navbar-hamburgerDiv">
-          <RiMenuLine className="navbar-hamburger" onClick={toggleSidebar} />
-        <div className="navbar-logo">Dashboard</div>
+          {sidebarOpen ? (
+            <RiCloseLine className="navbar-hamburger" onClick={toggleSidebar} />
+          ) : (
+            <RiMenuLine className="navbar-hamburger" onClick={toggleSidebar} />
+          )}
+
+          <div className="navbar-logo">Dashboard</div>
         </div>
         <div className="navbar-search">
           <div className="search-container">

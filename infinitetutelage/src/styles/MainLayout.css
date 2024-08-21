@@ -24,5 +24,12 @@
   }
 }
 
+@media (max-width:1000px) {
+  .main-content{
+   position: relative;
+    /* background-color: red; */
+  }
+}
+
 
   

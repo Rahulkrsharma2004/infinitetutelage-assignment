@@ -69,7 +69,8 @@
 }
 .navbar-hamburger{
   display: none;
-
+  /* background-color: #5430e6; */
+  /* color: #ffffff; */
 }
 
 
@@ -91,6 +92,7 @@
     cursor: pointer;
     font-size: 24px;
     color: #344054;
+    z-index: 1001;
   }
 }
 
