@@ -211,7 +211,7 @@
     flex-direction: row;
     margin: 25px auto;
     justify-content: space-between;
-    background-color: #14ae5c;
+    /* background-color: #14ae5c; */
   }
   .account-section,
   .trades-section {
