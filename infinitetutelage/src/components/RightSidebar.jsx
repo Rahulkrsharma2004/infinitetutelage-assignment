@@ -1,5 +1,4 @@
 import "../styles/RightSidebar.css";
-import { RiArrowRightUpLine } from "react-icons/ri";
 
 const RightSidebar = () => {
   return (
@@ -15,8 +14,19 @@ const RightSidebar = () => {
             <p className="account-balance">
               <span>0.00</span> USD
             </p>
-            <span className="icona">
-              <RiArrowRightUpLine />
+            <span >
+            <svg
+                width="11"
+                height="12"
+                viewBox="0 0 11 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.16987 3.62403L1.2939 11.5L0 10.2061L7.87505 2.33013H0.934282V0.5H11V10.5657H9.16987V3.62403Z"
+                  fill="#667085"
+                />
+              </svg>
             </span>
           </div>
         </div>
@@ -29,8 +39,19 @@ const RightSidebar = () => {
             <p className="account-balance">
               <span>0.00</span> USD
             </p>
-            <span className="icona">
-              <RiArrowRightUpLine />
+            <span>
+            <svg
+                width="11"
+                height="12"
+                viewBox="0 0 11 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.16987 3.62403L1.2939 11.5L0 10.2061L7.87505 2.33013H0.934282V0.5H11V10.5657H9.16987V3.62403Z"
+                  fill="#667085"
+                />
+              </svg>
             </span>
           </div>
         </div>

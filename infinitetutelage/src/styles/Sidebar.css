@@ -3,10 +3,10 @@
   color: white;
   display: flex;
   flex-direction: column;
-  /* width: 241px; */
+  width: 241px;
   gap: 140px;
   border: 0px 1px 0px 0px;
-  transition: transform 0.3s ease; 
+  /* transition: all 0.3s ease;  */
   /* transform: translateX(-100%);  */
 }
 .sidebaropen{
@@ -65,20 +65,20 @@
 
 .footerProfileIcon {
   margin-right: 10px;
-  font-size: 16px;
+  /* font-size: 20px; */
   background-color: #ae96e65a;
-  padding: 10px;
+  padding: 12px;
   border-radius: 50%;
 }
 
 .footerProfileName h4 {
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .footerProfileName p {
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .footerProfileName {
@@ -89,8 +89,8 @@
 @media (max-width: 1000px) {
   .sidebar {
     display: none;
-    left: -250;
-    transition: transform 0.3s ease; 
+    /* left: -250; */
+    transition: all 0.3s ease; 
   }
   .sidebaropen {
     display: block;
@@ -102,7 +102,7 @@
     flex-direction: column;
     gap: 140px;
     border: 0px 1px 0px 0px;
-    transition: transform 0.3s ease; 
+    transition: all 0.3s ease; 
     
   }
 }

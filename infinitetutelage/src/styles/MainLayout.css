@@ -1,7 +1,8 @@
   .container {
     display: flex;
     /* background-color: aqua; */
-    /* width: 70%; */
+    /* width: 100%; */
+    /* max-width: 2400px; */
   }
   
   .content {
@@ -12,6 +13,7 @@
     justify-content: space-evenly;
   }
 
+  
 
 /* Responsive styles */
 @media (max-width: 900px) {

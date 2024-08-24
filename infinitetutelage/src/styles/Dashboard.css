@@ -45,19 +45,12 @@
   font-weight: 500;
   line-height: 16.94px;
   text-align: center;
-  color: #344054;
+  color: #455570;
   margin: 0;
 }
 .grid-item span {
   display: flex;
   justify-content: center;
-  font-family: Inter;
-  font-size: 20px;
-  /* font-weight: 100; */
-  line-height: 16.94px;
-  text-align: center;
-  color: #667085;
-
 }
 
 .unique-dashboard-container {
@@ -116,13 +109,13 @@
 .unique-download-report {
   color: #ad8edd;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .unique-download-report span {
-  font-size: 23px;
+  /* font-size: 23px; */
   display: flex;
   margin-right: 8px;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .unique-overview-buttons {
