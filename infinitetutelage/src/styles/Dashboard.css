@@ -138,7 +138,7 @@
 }
 
 .unique-chart-placeholder {
-  height: 250px;
+  /* height: 250px; */
   /* background-color: gray; */
 }
 
@@ -157,3 +157,137 @@
   }
 }
 
+
+@media (min-width: 1600px) and (max-width: 2000px) {
+  .dashboard-container {
+    width: 70%;
+  }
+
+  .card {
+    padding: 16px;
+    gap: 26px;
+    margin-bottom: 24px;
+  }
+
+  .card h2 {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .grid-container {
+    gap: 20px;
+  }
+
+  .grid-item {
+    width: 100px;
+    height: 85px;
+    padding: 4px;
+  }
+
+  .grid-item p {
+    font-size: 16px;
+  }
+
+  .unique-card {
+    padding: 16px 18px 12px 16px;
+  }
+
+  .unique-grid-item {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .unique-grid-item span {
+    font-size: 28px;
+  }
+
+  .unique-grid-item p {
+    font-size: 16px;
+  }
+
+  .unique-overview-header h2 {
+    font-size: 16px;
+  }
+
+  .unique-overview-buttons {
+    gap: 12px;
+    padding-bottom: 24px;
+    padding-top: 12px;
+  }
+
+  .unique-yearly-button {
+    padding: 12px 18px;
+    border-radius: 14px;
+  }
+
+  .unique-chart-placeholder {
+    height: 280px;
+  }
+}
+
+@media (min-width: 2001px) and (max-width: 2480px) {
+  .dashboard-container {
+    width: 75%;
+  }
+
+  .card {
+    padding: 18px;
+    gap: 28px;
+    margin-bottom: 28px;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+
+  .grid-container {
+    gap: 22px;
+  }
+
+  .grid-item {
+    width: 120px;
+    height: 100px;
+    padding: 6px;
+  }
+
+  .grid-item p {
+    font-size: 18px;
+  }
+
+  .unique-card {
+    padding: 18px 20px 14px 18px;
+  }
+
+  .unique-grid-item {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .unique-grid-item span {
+    font-size: 32px;
+  }
+
+  .unique-grid-item p {
+    font-size: 18px;
+  }
+
+  .unique-overview-header h2 {
+    font-size: 18px;
+  }
+
+  .unique-overview-buttons {
+    gap: 14px;
+    padding-bottom: 28px;
+    padding-top: 14px;
+  }
+
+  .unique-yearly-button {
+    padding: 14px 20px;
+    border-radius: 16px;
+  }
+
+  .unique-chart-placeholder {
+    height: 320px;
+  }
+}

@@ -5,14 +5,11 @@ import { Chart, registerables } from "chart.js";
 Chart.register(...registerables);
 
 function BarThinkness() {
-  if (window.innerWidth < 480) {
-    return 10;
-  } else {
-    return 25;
-  }
+  return window.innerWidth < 480 ? 10 : 25;
 }
 
 const Dashboard = () => {
+  
   useEffect(() => {
     const ctx = document.getElementById("uniqueChart").getContext("2d");
 
@@ -293,10 +290,19 @@ const Dashboard = () => {
           <div className="unique-overview-header">
             <h2>Overview</h2>
             <div className="unique-download-report">
-              <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.899994 15.3H17.1V17.1H0.899994V15.3ZM9.89999 10.0548L15.3639 4.59L16.6365 5.8626L8.99999 13.5L1.36349 5.8635L2.63609 4.59L8.09999 10.053V0H9.89999V10.0548Z" fill="#AD8EDD"/>
-</svg>
-
+              <span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.899994 15.3H17.1V17.1H0.899994V15.3ZM9.89999 10.0548L15.3639 4.59L16.6365 5.8626L8.99999 13.5L1.36349 5.8635L2.63609 4.59L8.09999 10.053V0H9.89999V10.0548Z"
+                    fill="#AD8EDD"
+                  />
+                </svg>
               </span>
               Download Report
             </div>
@@ -308,7 +314,6 @@ const Dashboard = () => {
           <canvas
             id="uniqueChart"
             className="unique-chart-placeholder"
-            // width="100px"
           ></canvas>
         </div>
       </div>

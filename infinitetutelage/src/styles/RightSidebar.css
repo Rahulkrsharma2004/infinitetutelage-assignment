@@ -226,7 +226,7 @@
   }
 }
 
-@media (max-width:699px) {
+@media (max-width:700px) {
   .right-sidebar {
     width: 95%;
     display: flex;
@@ -248,3 +248,92 @@
     padding: 16px;
   }
 }
+
+
+@media (min-width:1600px) and (max-width:2000px) {
+  .right-sidebar {
+    width: 25%;
+    margin: 20px auto;
+  }
+
+  .account-section,
+  .trades-section {
+    padding: 10px 25px 28px 25px;
+    border-radius: 14px;
+    border: 2px solid #f2f4f7;
+  }
+
+  .account-card {
+    height: 130px;
+    padding: 15px 25px;
+  }
+
+  .trade-card {
+    padding: 18px 20px;
+    border-radius: 12px;
+  }
+
+  .trade-info {
+    gap: 12px;
+  }
+
+  .trade-status.long,
+  .trade-status.short {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .trade-amount.positive,
+  .trade-amount.negative {
+    font-size: 18px;
+  }
+
+  .trade-usd {
+    font-size: 17px;
+  }
+}
+
+@media (min-width:2001px) and (max-width:2480px) {
+  .right-sidebar {
+    width: 22%;
+    margin: 30px auto;
+  }
+
+  .account-section,
+  .trades-section {
+    padding: 12px 30px 32px 30px;
+    border-radius: 16px;
+    border: 2px solid #f2f4f7;
+  }
+
+  .account-card {
+    height: 140px;
+    padding: 20px 30px;
+  }
+
+  .trade-card {
+    padding: 20px 25px;
+    border-radius: 14px;
+  }
+
+  .trade-info {
+    gap: 15px;
+  }
+
+  .trade-status.long,
+  .trade-status.short {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .trade-amount.positive,
+  .trade-amount.negative {
+    font-size: 20px;
+  }
+
+  .trade-usd {
+    font-size: 19px;
+  }
+}
+
+
