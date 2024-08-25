@@ -1,19 +1,24 @@
 import "../styles/Dashboard.css";
-import { useEffect } from "react";
-
+import { useEffect, useRef } from "react";
 import { Chart, registerables } from "chart.js";
+
 Chart.register(...registerables);
 
-function BarThinkness() {
+function BarThickness() {
   return window.innerWidth < 480 ? 10 : 25;
 }
 
 const Dashboard = () => {
-  
-  useEffect(() => {
+  const chartRef = useRef(null);
+
+  const createChart = () => {
     const ctx = document.getElementById("uniqueChart").getContext("2d");
 
-    new Chart(ctx, {
+    if (chartRef.current) {
+      chartRef.current.destroy();
+    }
+
+    chartRef.current = new Chart(ctx, {
       type: "bar",
       data: {
         labels: [
@@ -40,7 +45,7 @@ const Dashboard = () => {
             ],
             backgroundColor: "rgba(128, 90, 213, 0.7)",
             borderRadius: 5,
-            barThickness: BarThinkness(),
+            barThickness: BarThickness(),
           },
         ],
       },
@@ -79,7 +84,7 @@ const Dashboard = () => {
               },
               stepSize: 250,
               callback: function (value) {
-                return value === 0 ? "0" : `$${value}`; // Conditionally format tick labels
+                return value === 0 ? "0" : `$${value}`;
               },
             },
             grid: {
@@ -89,7 +94,25 @@ const Dashboard = () => {
         },
       },
     });
+  };
+
+  useEffect(() => {
+    createChart();
+
+    const handleResize = () => {
+      createChart(); 
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      if (chartRef.current) {
+        chartRef.current.destroy();
+      }
+    };
   }, []);
+
 
   return (
     <div className="dashboard-container">
