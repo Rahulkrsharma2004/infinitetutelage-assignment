@@ -18,6 +18,18 @@ function BarThickness() {
   }
 }
 
+const getFontSize = () => {
+  const width = window.innerWidth;
+
+  if (width >= 1500 && width <= 2000) {
+    return 16; // Increase font size for screen width 1500px-2000px
+  } else if (width > 2000 && width <= 2500) {
+    return 20; // Further increase font size for screen width 2000px-2500px
+  } else {
+    return 12; // Default font size
+  }
+};
+
 const Dashboard = () => {
   const chartRef = useRef(null);
 
@@ -75,7 +87,7 @@ const Dashboard = () => {
               color: "#98A2B3",
               font: {
                 weight: "400",
-                size: "12px",
+                size: getFontSize(),
                 family: "Inter",
               },
             },
@@ -89,7 +101,7 @@ const Dashboard = () => {
               color: "#98A2B3",
               font: {
                 weight: "400",
-                size: "12px",
+                size: getFontSize(),
                 family: "Inter",
               },
               stepSize: 250,
