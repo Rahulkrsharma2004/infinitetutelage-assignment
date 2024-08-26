@@ -113,7 +113,7 @@
   }
   
   .navbar-logo {
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 30px;
   }
   
@@ -123,12 +123,12 @@
   
   .navbar-search input {
     padding: 6px 0 7px 35px;
-    font-size: 18px;
+    font-size:18px;
   }
   
   .navbar-icon {
     margin-left: 35px;
-    font-size: 1.4rem;
+    /* font-size: 11rem; */
   }
 
   .search-icon {
@@ -151,7 +151,7 @@
   }
   
   .navbar-logo {
-    font-size: 22px;
+    font-size: 35px;
     margin-left: 40px;
   }
   

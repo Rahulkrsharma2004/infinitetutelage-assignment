@@ -162,3 +162,52 @@
 }
 
 
+@media (min-width: 1500px) and (max-width: 2000px) {
+  .sidebar-item {
+    padding: 17px;
+    margin-left: 8px;
+    font-size: 1.1rem; /* Increase font size */
+  }
+
+  .sidebar-icon {
+    font-size: 1.5rem; /* Increase icon size */
+  }
+
+  .footerProfileIcon {
+    padding: 12px;
+    font-size: 1.5rem; /* Increase icon size */
+  }
+
+  .footerProfileName h4 {
+    font-size: 1.2rem; /* Increase font size */
+  }
+
+  .footerProfileName p {
+    font-size: 1rem; /* Increase font size */
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 2480px) {
+  .sidebar-item {
+    padding: 19px;
+    margin-left: 6px;
+    font-size: 1.3rem; /* Increase font size */
+  }
+
+  .sidebar-icon {
+    font-size: 1.8rem; /* Increase icon size */
+  }
+
+  .footerProfileIcon {
+    padding: 15px;
+    font-size: 1.8rem; /* Increase icon size */
+  }
+
+  .footerProfileName h4 {
+    font-size: 1.4rem; /* Increase font size */
+  }
+
+  .footerProfileName p {
+    font-size: 1.2rem; /* Increase font size */
+  }
+}

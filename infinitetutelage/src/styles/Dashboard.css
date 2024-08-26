@@ -295,3 +295,142 @@
     height: 320px;
   }
 }
+
+
+/* Styles for screen size 1500px to 2000px */
+@media (min-width: 1500px) and (max-width: 2000px) {
+  .dashboard-container {
+    width: 70%;
+    margin: auto;
+  }
+
+  .card {
+    padding: 16px;
+    gap: 26px;
+    margin-bottom: 24px;
+  }
+
+  .card h2 {
+    font-size: 16px; /* Increased font size */
+    margin-bottom: 24px;
+  }
+
+  .grid-container {
+    gap: 20px;
+  }
+
+  .grid-item {
+    width: 100px; /* Increased width */
+    height: 85px; /* Increased height */
+    padding: 4px;
+  }
+
+  .grid-item p {
+    font-size: 16px; /* Increased font size */
+  }
+
+  .unique-card {
+    padding: 16px 18px 12px 16px;
+  }
+
+  .unique-grid-item {
+    padding: 12px; /* Increased padding */
+    border-radius: 12px; /* Increased border radius */
+  }
+
+  .unique-grid-item span {
+    font-size: 28px; /* Increased icon size */
+  }
+
+  .unique-grid-item p {
+    font-size: 16px; /* Increased font size */
+  }
+
+  .unique-overview-header h2 {
+    font-size: 16px; /* Increased font size */
+  }
+
+  .unique-overview-buttons {
+    gap: 12px;
+    padding-bottom: 24px;
+    padding-top: 12px;
+  }
+
+  .unique-yearly-button {
+    padding: 12px 18px; /* Increased padding */
+    border-radius: 14px; /* Increased border radius */
+  }
+
+  .unique-chart-placeholder {
+    height: 280px; /* Increased height */
+  }
+}
+
+/* Styles for screen size 2000px to 2480px */
+@media (min-width: 2000px) and (max-width: 2480px) {
+  .dashboard-container {
+    width: 70%;
+    margin: auto;
+  }
+
+  .card {
+    padding: 18px; /* Increased padding */
+    gap: 28px;
+    margin-bottom: 28px;
+  }
+
+  .card h2 {
+    font-size: 18px; /* Increased font size */
+    margin-bottom: 28px;
+  }
+
+  .grid-container {
+    gap: 22px;
+  }
+
+  .grid-item {
+    width: 120px; /* Increased width */
+    height: 100px; /* Increased height */
+    padding: 6px;
+  }
+
+  .grid-item p {
+    font-size: 18px; /* Increased font size */
+  }
+
+  .unique-card {
+    padding: 18px 20px 14px 18px;
+  }
+
+  .unique-grid-item {
+    padding: 14px; /* Increased padding */
+    border-radius: 14px; /* Increased border radius */
+  }
+
+  .unique-grid-item span {
+    font-size: 32px; /* Increased icon size */
+  }
+
+  .unique-grid-item p {
+    font-size: 18px; /* Increased font size */
+  }
+
+  .unique-overview-header h2 {
+    font-size: 18px; /* Increased font size */
+  }
+
+  .unique-overview-buttons {
+    gap: 14px;
+    padding-bottom: 28px;
+    padding-top: 14px;
+  }
+
+  .unique-yearly-button {
+    padding: 14px 20px; /* Increased padding */
+    border-radius: 16px; /* Increased border radius */
+  }
+
+  .unique-chart-placeholder {
+    height: 320px; /* Increased height */
+  }
+}

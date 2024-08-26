@@ -287,21 +287,22 @@
 
   .trade-info {
     gap: 12px;
+    font-size: 20px;
   }
 
   .trade-status.long,
   .trade-status.short {
-    font-size: 16px;
+    font-size: 20px;
     padding: 6px;
   }
 
   .trade-amount.positive,
   .trade-amount.negative {
-    font-size: 18px;
+    font-size: 25px;
   }
 
   .trade-usd {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 
@@ -359,3 +360,69 @@
 }
 
 
+
+/* For screens between 1500px and 2000px */
+@media (min-width: 1500px) and (max-width: 2000px) {
+  .account-section h2,
+  .trades-section h2 {
+    font-size: 20px;
+  }
+
+  .account-card h3,
+  .trade-label,
+  .trade-status.long,
+  .trade-status.short,
+  .trade-size {
+    font-size: 18px;
+  }
+
+  .trade-amount.positive,
+  .trade-amount.negative {
+    font-size: 28px;
+  }
+
+  .trade-usd {
+    font-size: 22px;
+  }
+
+  .account-id span {
+    font-size: 16px;
+  }
+
+  .account-balance span {
+    font-size: 36px;
+  }
+}
+
+/* For screens between 2000px and 2480px */
+@media (min-width: 2000px) and (max-width: 2480px) {
+  .account-section h2,
+  .trades-section h2 {
+    font-size: 22px;
+  }
+
+  .account-card h3,
+  .trade-label,
+  .trade-status.long,
+  .trade-status.short,
+  .trade-size {
+    font-size: 20px;
+  }
+
+  .trade-amount.positive,
+  .trade-amount.negative {
+    font-size: 32px;
+  }
+
+  .trade-usd {
+    font-size: 24px;
+  }
+
+  .account-id span {
+    font-size: 18px;
+  }
+
+  .account-balance span {
+    font-size: 40px;
+  }
+}
