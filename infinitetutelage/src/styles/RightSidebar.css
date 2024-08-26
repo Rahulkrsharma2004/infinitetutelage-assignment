@@ -250,7 +250,7 @@
 }
 
 
-@media (min-width:1600px) and (max-width:2000px) {
+@media (min-width:1500px) and (max-width:2000px) {
   .right-sidebar {
     width: 25%;
     margin: 20px auto;

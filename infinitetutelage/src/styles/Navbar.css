@@ -107,9 +107,9 @@
 }
 
 
-@media (min-width: 1600px) and (max-width: 2000px) {
+@media (min-width: 1500px) and (max-width: 2000px) {
   .navbar {
-    padding: 20px 0;
+    padding: 30px 0;
   }
   
   .navbar-logo {
@@ -145,9 +145,9 @@
   }
 }
 
-@media (min-width: 2001px) and (max-width: 2480px) {
+@media (min-width: 2000px) and (max-width: 2480px) {
   .navbar {
-    padding: 25px 0;
+    padding: 35px 0;
   }
   
   .navbar-logo {

@@ -5,7 +5,17 @@ import { Chart, registerables } from "chart.js";
 Chart.register(...registerables);
 
 function BarThickness() {
-  return window.innerWidth < 480 ? 10 : 25;
+  const width = window.innerWidth;
+
+  if (width < 480) {
+    return 10;
+  } else if (width >= 1500 && width <= 2000) {
+    return 40;
+  } else if (width > 2000 && width <= 2480) {
+    return 60;
+  } else {
+    return 25; 
+  }
 }
 
 const Dashboard = () => {
