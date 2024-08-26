@@ -12,7 +12,7 @@ function BarThickness() {
   } else if (width >= 1500 && width <= 2000) {
     return 40;
   } else if (width > 2000 && width <= 2480) {
-    return 60;
+    return 57;
   } else {
     return 25; 
   }

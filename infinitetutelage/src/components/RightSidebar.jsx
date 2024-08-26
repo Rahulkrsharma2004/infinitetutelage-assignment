@@ -30,7 +30,7 @@ const RightSidebar = () => {
             </span>
           </div>
         </div>
-        <div className="account-card" style={{ marginTop: "20px" }}>
+        <div className="account-card" >
           <h3>Master Account</h3>
           <p className="account-id">
             <span>CTrader</span> #273728
